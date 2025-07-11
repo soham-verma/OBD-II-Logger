@@ -1,0 +1,13 @@
+[Unit]
+Description=OBD-II JSON Logger
+After=network.target
+
+[Service]
+User=dummy
+WorkingDirectory=/home/dummy
+ExecStart=/home/dummy/obd-venv/bin/python /home/dummy/obd_reader.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
