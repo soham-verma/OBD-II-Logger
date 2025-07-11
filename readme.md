@@ -70,9 +70,9 @@ Requires a clean Raspberry Pi OS installation with internet access and an ELM327
 8. **Install & enable service**:
 
    ```bash
-   sudo cp obd_logger.service /etc/systemd/system/obd_logger.service
+   sudo cp obd-logger.service /etc/systemd/system/obd-logger.service
    sudo systemctl daemon-reload
-   sudo systemctl enable obd_logger.service
+   sudo systemctl enable obd-logger.service
    ```
 
 ---
